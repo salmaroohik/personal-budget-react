@@ -1,4 +1,6 @@
 import React from 'react';
+import Chart from '../Chart/Chart';
+import D3js from '../D3js/D3js';
 
 
 
@@ -67,10 +69,22 @@ function HomePage() {
     
             <article>
                 <h1>Chart</h1>
-                <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
-                </p>
+                
+                    <Chart></Chart>
+                
             </article>
+        
+
+
+            <section>
+
+            <h1>Donut Chart</h1>
+            <div id="chart" class = "dchart">
+                <D3js/>
+            </div>  
+            </section>
+
+     
 
         </div>
 

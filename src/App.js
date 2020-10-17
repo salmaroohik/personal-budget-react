@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,11 +16,13 @@ import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
 
 
+
+
 function App() {
   return (
     <Router>
       <Menu/>
-      <Hero/>
+      <Hero> <Hero/> </Hero>
       <div className="mainContainer">
         <Switch>
           <Route path="/about">
